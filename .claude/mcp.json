@@ -1,5 +1,19 @@
 {
   "mcpServers": {
+    "claude-flow": {
+      "command": "npx",
+      "args": ["-y", "ruflo@latest", "mcp", "start"],
+      "env": {
+        "NODE_NO_WARNINGS": "1"
+      }
+    },
+    "ruv-swarm": {
+      "command": "npx",
+      "args": ["-y", "ruv-swarm@latest", "mcp", "start"],
+      "env": {
+        "NODE_NO_WARNINGS": "1"
+      }
+    },
     "flow-nexus": {
       "command": "node",
       "args": ["/workspaces/flow-cloud/mcp/flow-nexus-sse/mcp-server-supabase.js"],
